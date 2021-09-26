@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        *{
+            background-color: rgb(181, 230, 109);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+        input,button{
+            margin: 25px ;
+        }
+        #btn,button{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <strong>Enter Details:</strong>
+    <form>
+        <input type="text" name="Name" id="S_name" placeholder="Enter your Name">
+        <input type="number" name="Roll no" id="s_rn" placeholder="Enter your Roll no">
+        <input type="text" name="Class" id="s_class" placeholder="Enter your Class">
+        <input type="text" name="DOB" id="s_dob" placeholder="Enter your Birthdate">
+        <input type="button" id="btn" value="Add Student Detail" onclick="add()">
+    </form>
+    <button onclick="print()">Display Details</button>
+    <div id="header"></div>
+    <div id="details"></div>
+    <script src="script.js"></script>
+</body>
+</html>
