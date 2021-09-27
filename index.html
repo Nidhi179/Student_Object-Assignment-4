@@ -7,7 +7,7 @@
     <title>Student Details</title>
     <style>
         *{
-            background-color: rgb(181, 230, 109);
+            background-color: rgb(140, 206, 41);
         }
         form{
             display: flex;
@@ -15,8 +15,9 @@
             align-items: flex-start;
             
         }
-        input,button{
-            margin: 25px ;
+        input,button,strong{
+            margin: 15px ;
+            font-size: medium;
         }
         #btn,button{
             cursor: pointer;
@@ -28,11 +29,15 @@
     </style>
 </head>
 <body>
-    <strong>Enter Details:</strong>
+    <h2>Enter Details:</h2>
     <form>
+        <strong>Name:</strong>
         <input type="text" name="Name" id="S_name" placeholder="Enter your Name">
+        <strong>Roll no:</strong>
         <input type="number" name="Roll no" id="s_rn" placeholder="Enter your Roll no">
+        <strong>Class:</strong>
         <input type="text" name="Class" id="s_class" placeholder="Enter your Class">
+        <strong>DOB:</strong>
         <input type="text" name="DOB" id="s_dob" placeholder="Enter your Birthdate">
         <input type="button" id="btn" value="Add Student Detail" onclick="add()">
     </form>
